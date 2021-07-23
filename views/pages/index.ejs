@@ -1,0 +1,30 @@
+    <center>
+
+        <% if (ayah.length < 1) { %>
+            <h1>DATA KOSONG</h1>
+        <% } %>
+
+        <table class="uk-table uk-table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% let i=1 %> 
+                <% ayah.forEach(ayah => { %>
+                    
+                    <tr>
+                        <td> <%=i++%>  </td>
+                        <td> <%=ayah.nama%>  </td>
+                        <td> <%=ayah.umur%>  </td>
+                    </tr>
+                <% }) %>
+    
+            </tbody>
+        </table>
+
+    </center>
+    
